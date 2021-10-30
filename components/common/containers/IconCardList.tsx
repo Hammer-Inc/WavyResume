@@ -1,5 +1,5 @@
 import {Chip, Grid, Icon, Theme, Tooltip, useMediaQuery,} from "@mui/material";
-import React, {FunctionComponent, useCallback, useMemo} from "react";
+import React, {FunctionComponent, useCallback} from "react";
 import {IconCardSection as IconCardSectionType, InteractionItem} from "../../../store/types/home";
 import SectionContainer from "../SectionContainer";
 import IconCard from "../IconCard";

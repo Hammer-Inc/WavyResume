@@ -7,7 +7,6 @@ import {slice} from "lodash-es";
 import SectionContentMarkdown from "../elements/SectionContentMarkdown";
 import HorizontalCard from "../HorizontalCard";
 import SectionTitleMarkdown from "../elements/SectionTitleMarkdown";
-import {styled} from "@mui/material/styles";
 
 type HorizontalCardSectionProps = IHorizontalCardSection
 const HorizontalCardList: FunctionComponent<HorizontalCardSectionProps> = ({items, content}) => {
