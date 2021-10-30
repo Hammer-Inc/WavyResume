@@ -1,0 +1,20 @@
+---
+type: DynamicForm
+order: 6
+name: any-form
+fields:
+  - type: email
+    title: Your Email
+    name: email
+    required: true
+    placeholder: 'email@example.com'
+    icon: email
+
+  - type: multiline
+    title: Your Message
+    name: message
+    placeholder: "Hi Avrami, I wanted to reach out to you because..."
+content: |
+  #### Finally, this is a form *It's designed to use with netlify's automatic form handling feature*
+
+  [Learn more here](https://docs.netlify.com/forms/setup/)

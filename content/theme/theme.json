@@ -1,0 +1,20 @@
+{
+  "palette": {
+    "waveAngle": "180",
+    "primary": {
+      "main": "#1976d2"
+    },
+    "secondary": {
+      "main": "#ff7043"
+    },
+    "tonalOffset": 0.2,
+    "spacing": 16
+  },
+  "border": {
+    "borderColor": "rgba(0, 0, 0, 0.13)",
+    "borderWidth": 2
+  },
+  "typography": {
+    "useNextVariants": true
+  }
+}

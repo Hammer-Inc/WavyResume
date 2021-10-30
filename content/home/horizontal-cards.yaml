@@ -1,0 +1,25 @@
+type: HorizontalCardSection
+order: 3
+content: |
+    #### Horizontal Cards *You can also use yaml files to define content if you prefer*
+children:
+# The source folder to scrape, all items in here must be yaml or md files
+    source: home/subitems
+# You shouldn't need to change the key
+    key: items
+# This will only include items where the 'featured' key is truthy
+    filter:
+        featured: true
+        type: horizontal
+# What the frontend will get, you shouldn't modify this unless you also modify store/types
+    fields:
+        # We use handlebar templating.
+        order: '{{ order }}'
+# You don't have to use templating, you can just use a fixed value
+        image: '/assets/placeholder.png'
+# content is a magic key that is always rendered as markdown
+        content: '{{ short }}'
+# You can use the slug magic key to get the file name of an item, this allows you to link to other parts of the site
+        buttons:
+            - { title: "Read More", link: "/content/{{slug}}" }
+            - { title: "View Demo", link: "/#" }
