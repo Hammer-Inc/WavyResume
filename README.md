@@ -1,4 +1,6 @@
 # WavyResume Portfolio Showcase
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02b661ab-dca3-4548-96d5-9e3cc1374d6e/deploy-status)](https://app.netlify.com/sites/wavy-resume/deploys)
+
 This is a custom resume using React, NextJS and Netlify CMS
 
 Goals:
