@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import DynamicContent from "../components/sections/DynamicContent";
+import DynamicContent from "../../components/sections/DynamicContent";
 
 const Education: NextPage = () => {
 
@@ -9,7 +9,7 @@ const Education: NextPage = () => {
 }
 
 export async function getStaticProps() {
-  const {getPageState, getAppState} = await import('../store/rehydrate');
+  const {getPageState, getAppState} = await import('../../store/rehydrate');
   const baseState = await getAppState();
   const initialReduxState = await getPageState(baseState, 'education')
   return {props: {initialReduxState}}

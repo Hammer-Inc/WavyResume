@@ -3,12 +3,7 @@ import DynamicItem from "../../components/items/DynamicItem";
 import {ParsedUrlQuery} from "querystring";
 
 export async function getStaticPaths() {
-  // Return a list of possible value for id
-  const fs = require('fs')
-  const paths = fs.readdirSync('content/experience/cards')
-    .filter((v: string) => v.endsWith('.md'))
-    .map((v: string) => `/experience/${v.substr(0, v.lastIndexOf('.'))}`)
-  return {paths, fallback: false}
+  return {paths: [], fallback: false}
 }
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
