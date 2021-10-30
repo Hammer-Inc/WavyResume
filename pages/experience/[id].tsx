@@ -1,6 +1,6 @@
 import {GetStaticProps, NextPage} from "next";
 import DynamicItem from "../../components/items/DynamicItem";
-import {ParsedUrlQuery} from "querystring";
+import type {ParsedUrlQuery} from "querystring";
 
 export async function getStaticPaths() {
   return {paths: [], fallback: false}
